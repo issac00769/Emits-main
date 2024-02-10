@@ -1,9 +1,8 @@
 <template>
     <div class="container">
   
-      <h1 v-if="isVista2View">Este componenete solo funciona desde NavbarView</h1>
       <h1>Hola!</h1>
-      <button @click="redirectToHome">Adiós!</button>
+      <button @click="redirectToHome">Presione!</button>
     </div>
   </template>
   
@@ -11,10 +10,7 @@
   import { useRouter } from 'vue-router';
   
   const router = useRouter();
-  
-  
-  const isVista2View = router.currentRoute.value.name === 'Vista2View'; 
-  
+    
   const redirectToHome = () => {
     router.push({ path: '/' });
   };

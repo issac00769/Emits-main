@@ -1,12 +1,11 @@
 <template lang="">
   <div>
-    <h1>Hola Mucho gusto. Estas en el inicio</h1>
-    
+      
   </div>
 </template>
 <script setup lang="ts">
 
 </script>
-<style scoped>
+<style lang="">
   
 </style>
