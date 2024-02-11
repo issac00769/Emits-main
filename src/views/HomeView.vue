@@ -1,6 +1,6 @@
 <template lang="">
   <div>
-    <h1>Hola Mucho gusto. Estas en el inicio</h1>
+    <h1>Hola, mucho gusto. Estas en el inicio :)</h1>
     
   </div>
 </template>

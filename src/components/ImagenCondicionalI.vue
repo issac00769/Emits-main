@@ -2,7 +2,7 @@
     <div class="h">
       <button @click="toggleImagen" class="toggle-button">{{ mostrarImagen ? 'Ocultar' : 'Mostrar' }} Imagen</button>
       <img v-if="mostrarImagen" 
-           src="https://th.bing.com/th/id/OIP.HKNdzSKtU68UxBK8msVB-gHaGR?rs=1&pid=ImgDetMain" 
+           src="https://th.bing.com/th/id/R.389841052ddfdaf73dcb59b5675b9d3f?rik=W3JJ%2fA8EfRfLHw&pid=ImgRaw&r=0" 
            alt="Imagen condicional" 
            class="half-screen-image" />
     </div>
@@ -23,7 +23,7 @@
   .toggle-button {
     position: relative;
     top: 2rem;
-    left: 12rem;
+    left: 23rem;
     height: 3rem;
     width: 25rem;
     z-index: 1001; 
@@ -49,7 +49,7 @@
     height: 100vh; /* Ajusta según tus necesidades */
     position: fixed;
     top: 4rem; 
-    right:  15rem;
+    right:  10rem;
     object-fit: contain; /* Cambiar de 'cover' a 'contain' */
     transform: translateX(50%);
     z-index: 999; 

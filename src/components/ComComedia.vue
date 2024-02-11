@@ -7,7 +7,7 @@
       </div>
       <!-- Agregar el componente ImagenCondicionada -->
       <div class="image">
-        <ImagenCondicionada />
+        <ImagenCondicionalC />
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import ImagenCondicionada from '@/components/ImagenCondicionada.vue';
+import ImagenCondicionalC from '@/components/ImagenCondicionalC.vue';
 
 
 const router = useRouter();
@@ -27,7 +27,8 @@ const redirectToHome = () => {
 
 <style scoped>
 .container {
-  text-align: center;
+  text-align: left;
+  margin-right: 20rem;
 }
 
 .content {
@@ -38,6 +39,10 @@ const redirectToHome = () => {
 
 .info {
   flex: 1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
 }
 
@@ -48,8 +53,9 @@ const redirectToHome = () => {
 
 button {
   padding: 0.5rem 1rem;
+  margin-top: 2rem;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #34495e;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -57,6 +63,6 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 87, 179, 0.718);
 }
 </style>

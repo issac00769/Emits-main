@@ -18,6 +18,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import router from './router';
 
+
 const listamenu = router.options.routes
 </script>
 
