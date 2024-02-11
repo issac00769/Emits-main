@@ -1,13 +1,22 @@
 <template>
   <div class="container">
-
-    <h1>Bienvenido a la seccion de Imagenes!</h1>
-    <button @click="redirectToHome">Quiere regresar al Home!</button>
+    <div class="content">
+      <div class="info">
+        <h1>Bienvenido a la sección de Imagenes</h1>
+        <button @click="redirectToHome">¿Quieres regresar a Home?</button>
+      </div>
+      <!-- Agregar el componente ImagenCondicionada -->
+      <div class="image">
+        <ImagenCondicionada />
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
+import ImagenCondicionada from '@/components/ImagenCondicionada.vue';
+
 
 const router = useRouter();
 
@@ -18,7 +27,23 @@ const redirectToHome = () => {
 
 <style scoped>
 .container {
-  text-align: center; 
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  flex: 1;
+  text-align: left;
+}
+
+.image {
+  flex: 1;
+  text-align: right;
 }
 
 button {
